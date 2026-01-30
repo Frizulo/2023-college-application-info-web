@@ -30,4 +30,4 @@ python manage.py runserver
 
 ### 最滿意的 part
 吉祥物小兔！存在於 滑鼠、icon... 各個地方
-<img width="2113" height="602" alt="image" src="https://github.com/user-attachments/assets/e40741a2-cc0b-4560-b617-f27db1f01f53" />
+<img width="2110" height="604" alt="image" src="https://github.com/user-attachments/assets/97d3f9a5-05b7-432f-88bb-6cf6c45494c0" />
