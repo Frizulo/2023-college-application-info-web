@@ -1,0 +1,9 @@
+index.html在templates裡
+
+templates :網頁
+static :css js 圖片
+
+圖片路徑 ../static/pic
+css js 路徑 "{% static '.js or .css'%}"
+
+apply/setting.py的ALLOWED_HOSTS 網址

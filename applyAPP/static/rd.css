@@ -1,0 +1,84 @@
+/* 快捷按鈕 */
+.btns{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btns .index_button{
+    margin: 1%;
+}
+section{
+    width: 99%;
+}
+
+@media screen and (max-width:753px){
+    .btns{
+        flex-wrap: wrap;
+    }
+}
+
+/* 快捷按鈕 */
+
+
+table{
+    border-collapse: collapse;
+    width: 89%;
+    margin: 0 5%;
+    border: 1px;
+}
+
+th, td{
+    border: 1px solid #333;
+    text-align: center;
+    padding: 8px;
+}
+
+th{
+    background-color: #ffacba;
+}
+
+tbody td{
+    white-space: nowrap;
+}
+
+/* 奇數項目背景色 */
+.A{
+    background-color: #b9dae5;
+}
+
+/* 偶數項目背景色 */
+.B{
+    background-color: #ffcfd7;
+}
+/* 更淺奇項 */
+.LA{
+    background-color: #cbdfe6; 
+}
+/* 更淺偶項 */
+.LB{
+    background-color: #ffdbe1; 
+}
+
+ol{
+    font-size: 1.4rem;
+}
+ol li{
+    margin-left: 2rem;
+    width: 90%;
+    font-size: 1.2rem;
+}
+ol li p{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+h2{
+    border: #467687 solid 2px;
+    background-color:#d0eaf2;
+    padding: 10px;
+    margin: 10px;
+    text-align:center;
+    border-radius: 15px;
+}
+

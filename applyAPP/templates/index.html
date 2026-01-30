@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<!--head放網頁資訊-->
+<head>
+  <!--下一行：用UTF-8的編碼方式(可看中文)-->
+  <meta charset="UTF-8"></meta> 
+  <!--告訴搜尋引擎網頁描述-->
+  <meta name="description" content="個人申請準備指引" />
+  <!--告訴搜尋引擎作者-->
+  <meta name="author" content="Frizulo" />
+  <!--告訴搜尋引擎網頁關鍵字-->
+  <meta name="keyword" content="個人申請準備指引, 個人申請, 學習歷程, 準備指引, 學習歷程檔案, 學習歷程檔案範例, 學習歷程自述, 個人申請113, 個人申請分數, 個人申請人數, 個人申請介紹, 個申, 個申準備, 個人申請簡章, 個申簡章, 大學升學管道, 升學, 準備, 學習歷程檔案, 學習歷程, 面試, 面試準備, 考古題, 面試考古題, 個申面試, 個人申請標準" />
+  <!--視口設定-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--title網頁顯示標題-->
+  <title>主頁 | 個人申請準備指引(๑•̀ㅂ•́)و✧</title>
+  <!--引用styles.css-->
+  <link rel="stylesheet" href="{% static 'style.css' %}"/>
+</head>
+<body>
+  <div id="header">
+    <div class="slides-container">
+      <div class="Slide">
+        <img src="../static/pic/title-1.png"  alt="個人申請準備指引" style="width: 1160px">
+      </div>
+      <div class="Slide">
+        <img src="../static/pic/title-2.png" alt="高中生活like..." style="width: 1160px">
+      </div>
+    </div>
+  </div><!--圖片轉轉轉(●ˇ∀ˇ●)-->
+       
+  <!--導覽列開始-->
+  <div class="nav">
+    <button class="menu-button">&#9776;</button>
+    <a href="/index"><img class="icon_out" src="../static/pic/icon.png" alt="icon:Frizulo" style="max-height: 50px; float:right; margin-top: -50px;"></a>
+    <ul class="menu">
+      <a href="/index"><img class="icon_in" src="../static/pic/icon.png" alt="icon:Frizulo" style="max-height: 60px;"></a>
+      <li><a href="/introduction">個人申請介紹</a></li>
+      <li><a href="/brochure">簡章查詢</a></li>
+      <li><a href="/review_data">審查資料項目</a></li>
+      <li><a href="/interview">面試準備</a></li>
+    </ul>
+  </div> 
+  <!--導覽列結束-->
+  
+  <!--web引導介紹-->
+  <div class="center_text">
+    <h2>~這是一個關於個人申請的網站~</h2>
+    <p style="font-size: large;">本網站將與其相關的資訊分成 4 部分</br>分別是「個人申請介紹」、「簡章查詢」、「審查資料項目」、「面試準備」</br>每部分的內容概述如下：</p>
+  </div>
+  <section class="intro">
+    <!--個人申請介紹-->
+    <div>
+      <h2>個人申請介紹</h2>
+      <li>必須具備要素</li>
+      <li>個人申請機制</li>
+      <li>特殊組別介紹</li>
+      <li>相關參加限制</li>
+    </br>
+      <a title="個人申請介紹" href="/introduction" class="index_button"><i>查看更多...</i></a>
+    </div>
+    <!--簡章查詢-->
+    <div>
+      <h2>簡章查詢</h2>
+      <li>依指定學校查詢</li>
+      <li>依指定學系查詢</li>
+      <li>依指定門檻查詢</li>
+      <li>依校系代碼查詢</li>
+    </br>
+      <a title="簡章查詢" href="/brochure" class="index_button"><i>查看更多...</i></a>
+    </div>
+
+    <article class="clear"></article>
+
+    <!--審查資料項目-->
+    <div>
+      <h2>審查資料項目</h2>
+      <li>資料項目分類</li>
+      <li>相關影音資料</li>
+      <li>特定項目教學</li>
+      <li>特定項目範例</li>
+    </br>
+      <a title="審查資料項目" href="/review_data" class="index_button"><i>查看更多...</i></a>
+    </div>
+    <!--面試準備-->
+    <div>
+      <h2>面試準備</h2>
+      <li>常見問題與回答</li>
+      <li>統整Ｑ＆Ａ重點</li>
+      <li>儀容儀表的重點</li>
+      <li>面試相關考古題</li>
+    </br>
+      <a title="面試準備" href="/interview" class="index_button"><i>查看更多...</i></a>
+    </div>
+  </section>
+
+  <!--因使用float所以需使用clear讓上面懸浮的內容不會與後面物件重疊-->
+  <div class="clear"></div>
+  <hr></hr>
+
+  <!--吉祥物小兔介紹-->
+
+  <section class="rabbit_intro">
+    <img src="../static/pic/mouse_click.png">
+    <img src="../static/pic/mouse_normal.png">
+    <img src="../static/pic/mouse_pointer.png">
+  </section>
+  <div class="center_text" style="margin-top: -5vh;">
+    <h2 style="font-weight:normal;">這是我們的吉祥物小兔，牠會在這個網站一直陪伴著你(●'◡'●)</h2>
+  </div>
+  <!--小兔介紹結束-->
+  
+  <hr></hr>
+
+  <!--FB按讚功能-->
+  <section class="FB">
+    <p class="marquee-top"><marquee>ヾ(⌐■_■)ノ♪&emsp;&emsp;&emsp;&emsp;ヾ(⌐■_■)ノ♪&emsp;&emsp;&emsp;&emsp;ヾ(⌐■_■)ノ♪&emsp;&emsp;&emsp;&emsp;ヾ(⌐■_■)ノ♪&emsp;&emsp;&emsp;&emsp;ヾ(⌐■_■)ノ♪&emsp;&emsp;&emsp;&emsp;ヾ(⌐■_■)ノ♪&emsp;&emsp;&emsp;&emsp;ヾ(⌐■_■)ノ♪&emsp;&emsp;&emsp;&emsp;ヾ(⌐■_■)ノ♪&emsp;&emsp;&emsp;&emsp;</marquee></p>
+    <div class="arrow-left"><b>→</b></div>
+      <div class="like-button">
+      <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Falgo.nttu.edu.tw%2F1121ITWWW%2F11211107&width=174&layout=button_count&action=like&size=large&share=true&height=46&appId" width="130" height="30" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </div>
+    <div class="arrow-right"><b>←</b></div>
+    <p class="marquee-bottom"><marquee>&emsp;&emsp;&emsp;&emsp;♪(^∇^*)&emsp;&emsp;&emsp;&emsp;♪(^∇^*)&emsp;&emsp;&emsp;&emsp;♪(^∇^*)&emsp;&emsp;&emsp;&emsp;♪(^∇^*)&emsp;&emsp;&emsp;&emsp;♪(^∇^*)&emsp;&emsp;&emsp;&emsp;♪(^∇^*)&emsp;&emsp;&emsp;&emsp;♪(^∇^*)&emsp;&emsp;&emsp;&emsp;♪(^∇^*)</marquee></p>
+  </section>
+  <!--FB按讚功能結束-->
+
+  <hr></hr>
+
+  <!--feedback-->
+
+  <section class="feedback">
+    <div class="content">
+      <h2>Help us improve!</h2>
+      <select id="menu">
+        <option value="home">首頁</option>
+        <option value="intro">個人申請介紹</option>
+        <option value="search">簡章查詢</option>
+        <option value="data">審查資料項目</option>
+        <option value="interview">面試準備</option>
+        <option value="easter">彩蛋類</option>
+      </select>
+      <input type="text" id="textInput" placeholder="填入問題或感受(*￣3￣)╭">
+      <p class="index_button" id="submitBtn">送出</p>
+      <div class="delete" id="deleteBtn">delete</div>
+    </div>
+  </section>
+
+  <!--feedback結束-->
+
+  <hr></hr>
+
+  <!--scroll to top-->
+  <div id="scroll-to-top-btn">⩑</div>
+  
+
+  <!--footer 放網頁資訊-->
+  <footer>
+    <p>您的支持就是我最大的鼓勵ᕦ(ò_óˇ)ᕤ</p>
+    <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Falgo.nttu.edu.tw%2F1121ITWWW%2F11211107&width=174&layout=button_count&action=like&size=large&share=true&height=46&appId" width="130" height="30"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    <p>Copyright &copy; 2023FrizuloAll Rights Reserved.</p>
+    <!-- <a href="/game" class="index_button">玩個遊戲！來放鬆一下╰(*°▽°*)╯</a> -->
+    <p>本網站僅供 國立臺東大學 課程"互動式網頁技術" 使用（此為學生作品）</p>
+  </footer>
+  <!--footer 結束-->
+
+  <!--引用JS要放最後-->
+  <script src="{% static 'script_feedback.js' %}"></script>
+  <script src="{% static 'script_stp.js' %}"></script>
+  <script src="{% static 'script_openmenu.js' %}"></script>
+  </body>
+</html>

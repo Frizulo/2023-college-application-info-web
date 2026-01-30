@@ -1,0 +1,83 @@
+
+/* 
+* 由introduction.html
+* 開始設計的CSS
+* 文字及其相關配置
+*/
+/* rule 個申規則介紹 */
+
+/*
+.rule{
+    padding: 2%;
+    width: 100%;
+    height: auto;
+
+}
+.title{
+    font-size: 2rem;
+}
+dt{
+    padding-bottom: 1vh;
+    font-size: 1.2rem;
+}
+dl div{
+    padding: 5px;
+    background-color: #fdcbd3;
+    border-radius: 15px;
+    width: 85%;
+    margin: 10px;
+}
+dd{
+    font-size: 1.15rem;
+}
+ul{
+    margin-left: 2em;
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+.right-pic{
+    float: right;
+}
+*/
+
+
+.rule div > h2{
+    border: #467687 solid 2px;
+    background-color:#d0eaf2;;
+    padding: 10px;
+    margin: 10px;
+    text-align:center;
+    border-radius: 15px;
+}
+
+
+.rule dd, .rule dt{
+    margin-left: 2em;
+    font-size: 1.2rem;
+}
+
+.rule dl{
+    width: 48%;
+    margin-right: 1%;
+    font-size: 1.4rem;
+}
+
+.text{
+    margin: 1%;
+    width: 100%;
+    font-size: 1.1rem;
+    display: flex; /* 水平 */
+}
+
+
+@media screen and (max-width: 768px) {
+    .text {
+        flex-direction: column; /* 堆疊 */
+    }
+    
+    .rule dl{
+        width: 99%;
+    }
+
+
+}

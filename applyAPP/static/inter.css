@@ -1,0 +1,29 @@
+h2{
+    border: #467687 solid 2px;
+    background-color:#d0eaf2;
+    padding: 10px;
+    margin: 10px;
+    text-align:center;
+    border-radius: 15px;
+}
+
+.btns{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width:753px){
+    .btns{
+        flex-wrap: wrap;
+    }
+}
+
+.btns .index_button{
+    margin: 1%;
+}
+
+section{
+    width: 99%;
+}

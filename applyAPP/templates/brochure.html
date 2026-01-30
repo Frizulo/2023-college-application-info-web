@@ -1,0 +1,198 @@
+<!--簡章查詢-->
+<!DOCTYPE html>
+{% load static %}
+<html>
+<!--head放網頁資訊-->
+<head>
+  <!--下一行：用UTF-8的編碼方式(可看中文)-->
+  <meta charset="UTF-8"></meta> 
+  <!--告訴搜尋引擎網頁描述-->
+  <meta name="description" content="個人申請準備指引" />
+  <!--告訴搜尋引擎作者-->
+  <meta name="author" content="Frizulo" />
+  <!--告訴搜尋引擎網頁關鍵字-->
+  <meta name="keyword" content="個人申請準備指引, 個人申請, 學習歷程, 準備指引, 學習歷程檔案, 學習歷程檔案範例, 學習歷程自述, 個人申請113, 個人申請分數, 個人申請人數, 個人申請介紹, 個申, 個申準備, 個人申請簡章, 個申簡章, 大學升學管道, 升學, 準備, 學習歷程檔案, 學習歷程, 面試, 面試準備, 考古題, 面試考古題, 個申面試, 個人申請標準" />
+  <!--視口設定-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--title網頁顯示標題-->
+  <title>簡章查詢 | 個人申請準備指引(๑•̀ㅂ•́)و✧</title>
+  <!--引用styles.css-->
+  <link rel="stylesheet" href="{% static 'style.css' %}"/>
+  <link rel="stylesheet" href="{% static 'bro.css' %}"/>
+  <link rel="stylesheet" href="{% static 'rd.css' %}"/>
+</head>
+<body>
+  <div id="header">
+    <div class="slides-container">
+      <div class="Slide">
+        <img src="../static/pic/title-1.png"  alt="個人申請準備指引" style="width: 1160px">
+      </div>
+      <div class="Slide">
+        <img src="../static/pic/title-2.png" alt="高中生活like..." style="width: 1160px">
+      </div>
+    </div>
+  </div><!--圖片轉轉轉(●ˇ∀ˇ●)-->
+       
+  <!--導覽列開始-->
+  <div class="nav">
+    <button class="menu-button">&#9776;</button>
+    <a href="/index"><img class="icon_out" src="../static/pic/icon.png" alt="icon:Frizulo" style="max-height: 50px; float:right; margin-top: -50px;"></a>
+    <ul class="menu">
+      <a href="/index"><img class="icon_in" src="../static/pic/icon.png" alt="icon:Frizulo" style="max-height: 60px;"></a>
+      <li><a href="/introduction">個人申請介紹</a></li>
+      <li><a href="/brochure">簡章查詢</a></li>
+      <li><a href="/review_data">審查資料項目</a></li>
+      <li><a href="/interview">面試準備</a></li>
+    </ul>
+  </div> 
+  <!--導覽列結束-->
+
+  
+<section class="sec">
+  <h2>學校資訊搜尋</h2>
+  
+  <!--依指定學校查詢-->
+  <label for="schoolSearch">依指定學校查詢:</label>
+  {% csrf_token %}
+  <input type="text" id="schoolSearch" list="schoolList">
+  <datalist id="schoolList">
+      <option value="學校1">
+      <option value="學校2">
+      <option value="學校3">
+  </datalist>
+
+  <!--依指定學系查詢-->
+  <label for="departmentSearch">依指定學系查詢:</label>
+  <input type="text" id="departmentSearch" list="departmentList">
+  <datalist id="departmentList">
+      <option value="科系1">
+      <option value="科系2">
+      <option value="科系3">
+  </datalist>
+
+  <!-- 依指定門檻查詢
+  <label for="thresholdSearch">依指定門檻查詢:</label>
+  <div class="threshold">
+  <div>
+  <div class="text">國文：</div>
+  <select id="thresholdSearch">
+      <option value="頂標">頂標</option>
+      <option value="前標">前標</option>
+      <option value="均標">均標</option>
+      <option value="後標">後標</option>
+      <option value="底標">底標</option>
+      <option value="流標">流標</option>
+  </select>
+  </div>
+  <div>
+  <div class="text">英文：</div>
+  <select id="thresholdSearch">
+      <option value="頂標">頂標</option>
+      <option value="前標">前標</option>
+      <option value="均標">均標</option>
+      <option value="後標">後標</option>
+      <option value="底標">底標</option>
+      <option value="流標">流標</option>
+  </select>
+  </div>
+  <div>
+  <div class="text">數A：</div>
+  <select id="thresholdSearch">
+      <option value="頂標">頂標</option>
+      <option value="前標">前標</option>
+      <option value="均標">均標</option>
+      <option value="後標">後標</option>
+      <option value="底標">底標</option>
+      <option value="流標">流標</option>
+  </select>
+  </div>
+  <div>
+  <div class="text">數B：</div>
+  <select id="thresholdSearch">
+      <option value="頂標">頂標</option>
+      <option value="前標">前標</option>
+      <option value="均標">均標</option>
+      <option value="後標">後標</option>
+      <option value="底標">底標</option>
+      <option value="流標">流標</option>
+  </select>
+  </div>
+  <div>
+  <div class="text">社會：</div>
+  <select id="thresholdSearch">
+      <option value="頂標">頂標</option>
+      <option value="前標">前標</option>
+      <option value="均標">均標</option>
+      <option value="後標">後標</option>
+      <option value="底標">底標</option>
+      <option value="流標">流標</option>
+  </select>
+  </div>
+  <div>
+  <div class="text">自然：</div>
+  <select id="thresholdSearch">
+      <option value="頂標">頂標</option>
+      <option value="前標">前標</option>
+      <option value="均標">均標</option>
+      <option value="後標">後標</option>
+      <option value="底標">底標</option>
+      <option value="流標">流標</option>
+  </select>
+  </div>
+  </div> -->
+  <!--依校系代碼查詢-->
+  <label for="codeSearch">依校系代碼查詢:</label>
+  <div>
+  <input type="text" id="codeSearch" placeholder="輸入六位數校系代碼">
+  
+  </div>
+
+  <div class="index_button" onclick="search()">開始搜尋</div>
+</section>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th rowspan="2">校系代碼</th>
+      <th rowspan="2">校系名稱</th>
+      <th rowspan="2">招生名額</th>
+      <th colspan="8">學測檢定標準/篩選倍率</th>
+    </tr>
+    <tr>
+      <th>國</th>
+      <th>英</th>
+      <th>數A</th>
+      <th>數B</th>
+      <th>社</th>
+      <th>自</th>
+      <th>英聽</th>
+      <th>相加項</th>
+    </tr>
+  </thead>
+  <tbody id='info'>
+    
+  </tbody>
+</table>
+
+  <hr></hr>
+
+  <!--scroll to top-->
+  <div id="scroll-to-top-btn">⩑</div>
+
+  <!--footer 放網頁資訊-->
+  <footer>
+    <p>您的支持就是我最大的鼓勵ᕦ(ò_óˇ)ᕤ</p>
+    <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Falgo.nttu.edu.tw%2F1121ITWWW%2F11211107&width=174&layout=button_count&action=like&size=large&share=true&height=46&appId" width="130" height="30"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; ../static/picture-in-../static/picture; web-share"></iframe>
+
+    <p>Copyright &copy; 2023 Frizulo All Rights Reserved.</p>
+    
+    <p>本網站僅供 國立臺東大學 課程"互動式網頁技術" 使用（此為學生作品）</p>
+  </footer>
+  <!--footer 結束-->
+
+  <!--引用JS要放最後-->
+  <script src="{% static 'script_stp.js' %}"></script>
+  <script src="{% static 'script_option.js' %}"></script>
+  <script src="{% static 'script_openmenu.js' %}"></script>
+  </body>
+</html>

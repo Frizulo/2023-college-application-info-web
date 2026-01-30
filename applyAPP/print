@@ -1,0 +1,22 @@
+import os
+from pathlib import Path
+import csv
+
+department_path = os.path.join(Path(__file__).resolve().parent,'校系')
+for file_name in os.listdir(department_path):
+    id,name = file_name.split('.')[0].split('_')
+    with open(department_path+'/'+file_name, 'r', newline='') as csvfile:
+        # 使用csv.reader讀取檔案
+        csv_reader = csv.reader(csvfile)
+        # 讀取並忽略標題行
+        header = next(csv_reader)
+        # 迭代每一行
+        for row in csv_reader:
+            if csv_reader.line_num % 2 == 0:
+                data1 = row
+            elif csv_reader.line_num % 2 == 1:
+                data2 = row[3:]
+                data2.pop(-2)
+                print(data1,'\n',data2)
+                
+

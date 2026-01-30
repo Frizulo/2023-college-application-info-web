@@ -1,0 +1,209 @@
+<!--面試準備-->
+<!DOCTYPE html>
+{% load static %}
+<html>
+<!--head放網頁資訊-->
+<head>
+  <!--下一行：用UTF-8的編碼方式(可看中文)-->
+  <meta charset="UTF-8"></meta> 
+  <!--告訴搜尋引擎網頁描述-->
+  <meta name="description" content="個人申請準備指引" />
+  <!--告訴搜尋引擎作者-->
+  <meta name="author" content="Frizulo" />
+  <!--告訴搜尋引擎網頁關鍵字-->
+  <meta name="keyword" content="個人申請準備指引, 個人申請, 學習歷程, 準備指引, 學習歷程檔案, 學習歷程檔案範例, 學習歷程自述, 個人申請113, 個人申請分數, 個人申請人數, 個人申請介紹, 個申, 個申準備, 個人申請簡章, 個申簡章, 大學升學管道, 升學, 準備, 學習歷程檔案, 學習歷程, 面試, 面試準備, 考古題, 面試考古題, 個申面試, 個人申請標準" />
+  <!--視口設定-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--title網頁顯示標題-->
+  <title>面試準備 | 個人申請準備指引(๑•̀ㅂ•́)و✧</title>
+  <!--引用styles.css-->
+  <link rel="stylesheet" href="{% static 'style.css' %}"/>
+  <link rel="stylesheet" href="{% static 'inter.css'%}"/>
+</head>
+<body>
+  <div id="header">
+    <div class="slides-container">
+      <div class="Slide">
+        <img src="../static/pic/title-1.png"  alt="個人申請準備指引" style="width: 1160px">
+      </div>
+      <div class="Slide">
+        <img src="../static/pic/title-2.png" alt="高中生活like..." style="width: 1160px">
+      </div>
+    </div>
+  </div><!--圖片轉轉轉(●ˇ∀ˇ●)-->
+       
+  <!--導覽列開始-->
+  <div class="nav">
+    <button class="menu-button">&#9776;</button>
+    <a href="/index"><img class="icon_out" src="../static/pic/icon.png" alt="icon:Frizulo" style="max-height: 50px; float:right; margin-top: -50px;"></a>
+    <ul class="menu">
+      <a href="/index"><img class="icon_in" src="../static/pic/icon.png" alt="icon:Frizulo" style="max-height: 60px;"></a>
+      <li><a href="/introduction">個人申請介紹</a></li>
+      <li><a href="/brochure">簡章查詢</a></li>
+      <li><a href="/review_data">審查資料項目</a></li>
+      <li><a href="/interview">面試準備</a></li>
+    </ul>
+  </div> 
+  <!--導覽列結束-->
+
+  <!--快捷按鈕-->
+  <section>
+    <h2>！linkedin！</h2>
+    <div class="btns">
+      <div class="index_button" id="first">面試的注意事項</div>
+      <div class="index_button" id="second">面試題目類別</div>
+      <div class="index_button" id="third">儀容儀表指導</div>
+      <div class="index_button" id="fourth">相關外部連結</div>
+    </div>
+  </section>
+  <!--快捷按鈕end-->
+
+  <section id="target_first">
+    <h2>面試的注意事項</h2>
+    <ol type="1">
+      <li>事前準備：
+        <p style="margin-top: 0%;">
+        &emsp;&emsp;熟讀通知的注意事項、確認面試形式、事前模擬問題、練習網路資源考古題。<br>
+        &emsp;&emsp;熟悉校系資訊，包含課程地圖、師資、教育環境。<br>
+        &emsp;&emsp;準備自我介紹文稿，並加以練習。
+        </p>
+      </li>
+      <li>面試當天：
+        <p style="margin-top: 0%;">
+        &emsp;&emsp;備妥證件、資料，保持得宜服裝、儀態、禮貌。
+        </p>
+      </li>
+      <li>面試過程：
+        <p style="margin-top: 0%;">
+        &emsp;&emsp;回應時，長度適中、音量適切、保持抑揚頓挫、反應須快速。
+        </p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="target_second">
+    <h2>面試題目類別</h2>
+    <ol type="1">
+      <li>自我介紹：
+        <p style="margin-top: 0%;">
+        &emsp;&emsp;先撰寫約 800 字的講稿，練習對稿念時間，再決定加長或減少內容。<br>
+        &emsp;&emsp;內容緊扣自身優勢和校系需要的能力特質，強化具體事證。<br>
+        &emsp;&emsp;五段式架構：開頭（姓名/學校）、第一段（背景/優勢）、第二段（與科系相關努力、特質）、第三段（科系所需能力、態度）、結尾（未來展望）
+        </p>
+      </li>
+      <li>書審內容提問：
+        <p style="margin-top: 0%;">
+        &emsp;&emsp;寫書審的時候，先猜測可提問之題目，同時請他人看書審發問，找到可能出題方向，並加以練習。<br>
+        &emsp;&emsp;首先、其次、最後，賦予回答邏輯性。
+        </p>
+      </li>
+      <li>校系內涵提問：
+        <p style="margin-top: 0%;">
+        &emsp;&emsp;先行關注校系宗旨、特色、發展重點、師資、課程規劃…等重要資訊。<br>
+        &emsp;&emsp;避免過於繞彎，直接回答問題。<br>
+        &emsp;&emsp;可能會提問相似校系區別，務必要客觀，勿褒貶。
+        </p>
+      </li>
+      <li>專業知識提問：
+        <p style="margin-top: 0%;">
+        &emsp;&emsp;重點式回答，著重定律、定義、專有名詞說明與應用。<br>
+        &emsp;&emsp;專業知識的比較，明確闡述差異即可。不要忘記自身想法的呈現。
+        </p>
+      </li>
+      <li>相關時事提問：
+        <p style="margin-top: 0%;">
+        &emsp;&emsp;注意關注與科系相關的時事。<br>
+        &emsp;&emsp;不要過於武斷，勇於提出質疑，也許答案不一定絕對。
+        </p>
+      </li>
+      <li><b>全程重點</b>：
+        <p style="margin-top: 0%;">
+        &emsp;&emsp;避免負面思考，盡量呈現正向積極的人格。<br>
+        &emsp;&emsp;清晰明確具說明的應答。<br>
+        &emsp;&emsp;當可以提出問題，務必讓教授印象深刻。<br>
+        &emsp;&emsp;<a class="index_button" target="_blank" title="47雲端輔導室_大學面試攻略" href="https://youtube.com/playlist?list=PLpGME9PTQHVsIN_h3eHlpdyiIUOMyDai9&si=QhbnxoNvJ-qmA0q_">47雲端輔導室：大學面試攻略</a>提供包含面試加分提問、面試情境…等相關資訊。
+        </p>
+      </li>
+    </ol>
+  </section>
+  
+
+  <section id="target_third">
+    <h2>儀容儀表指導</h2>
+    <ol type="1">
+      <li><a class="index_button" target="_blank" title="必看啦！大學申請面試技巧大公開！面試達人教你怎麼穿？問題這樣答就對了！｜快樂寶賤" href="https://youtu.be/DJCM4Cl7d7E?si=F1AcR2HXjDphdNub">必看啦！大學申請面試技巧大公開！面試達人教你怎麼穿？問題這樣答就對了！｜快樂寶賤</a>
+        <p style="margin-top: 0%;">
+        &emsp;&emsp;
+        </p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="target_fourth">
+    <h2>相關外部連結</h2>
+    <ol type="1">
+      <li><a class="index_button" target="_blank" title="大學教授教你面試三絕招" href="https://youtu.be/simP18PNQLc?si=n_s4TyYtmPO0f6U8">大學教授教你面試三絕招</a>
+        <p style="margin-top: 0%;">
+        &emsp;&emsp;
+        </p>
+      </li>
+      <li><a class="index_button" target="_blank" title="面試的自我介紹怎麼準備？零經驗也能輕鬆完成自介準備大公開！| 【 #我要上大學】自我介紹篇（有cc字幕）" href="https://youtu.be/Ww_zW-OoPlU?si=ST9l3e5MowpxLUoF">面試的自我介紹怎麼準備？零經驗也能輕鬆完成自介準備大公開！| 【 #我要上大學】自我介紹篇（有cc字幕）</a>
+        <p style="margin-top: 0%;">
+        &emsp;&emsp;
+        </p>
+      </li>
+      <li><a class="index_button" target="_blank" 
+        title="大學面試攻略！大學二階面試自我介紹範例、服裝、面試問題、提問準備一次看 | 親子天下" 
+        href="https://www.parenting.com.tw/article/5094892">
+        大學面試攻略！大學二階面試自我介紹範例、服裝、面試問題、提問準備一次看 | 親子天下
+      </a>
+        <p style="margin-top: 0%;">
+        &emsp;&emsp;
+        </p>
+      </li>
+      <li><a class="index_button" target="_blank" title="高中生在大學面試最怕被問到的 5 大難題，怎麼答？"
+         href="https://ioh.tw/articles/ioharticles-%E9%AB%98%E4%B8%AD%E7%94%9F%E5%9C%A8%E5%A4%A7%E5%AD%B8%E9%9D%A2%E8%A9%A6%E6%9C%80%E5%AE%B3%E6%80%95%E8%A2%AB%E5%95%8F%E5%88%B0%E7%9A%84%E9%9B%A3%E9%A1%8C">
+         高中生在大學面試最怕被問到的 5 大難題，怎麼答？
+         </a>
+        <p style="margin-top: 0%;">
+        &emsp;&emsp;
+        </p>
+      </li>
+      <li><a class="index_button" target="_blank" title="大學面試會緊張怎麼辦？魅力從心開始，別讓10分鐘毀了大學四年｜申請入學口試技巧"
+         href="https://www.learn4c.com/post/oral-examination">
+         大學面試會緊張怎麼辦？魅力從心開始，別讓10分鐘毀了大學四年｜申請入學口試技巧
+         </a>
+        <p style="margin-top: 0%;">
+        &emsp;&emsp;
+        </p>
+      </li>
+      <li><a class="index_button" target="_blank" title="2024/113年大學面試準備：大學個人申請入學英文面試必備自我介紹攻略-洋碩美語"
+         href="https://www.ynso.com.tw/newExam/education/inside?str=7CB2F7C7EAF193ACE61986A65D3D6847&print_id=4628">
+        2024/113年大學面試準備：大學個人申請入學英文面試必備自我介紹攻略-洋碩美語
+         </a>
+        <p style="margin-top: 0%;">
+        &emsp;&emsp;
+        </p>
+      </li>
+    </ol>
+  </section>
+  
+  <!--scroll to top-->
+  <div id="scroll-to-top-btn">⩑</div>
+
+  <!--footer 放網頁資訊-->
+  <footer>
+    <p>您的支持就是我最大的鼓勵ᕦ(ò_óˇ)ᕤ</p>
+    <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Falgo.nttu.edu.tw%2F1121ITWWW%2F11211107&width=174&layout=button_count&action=like&size=large&share=true&height=46&appId" width="130" height="30"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; ../static/picture-in-../static/picture; web-share"></iframe>
+    <p>Copyright &copy; 2023 <a href="#" style="color: aliceblue;" title="關於開發者(?">Frizulo</a> All Rights Reserved.</p>
+    
+    <p>本網站僅供 國立臺東大學 課程"互動式網頁技術" 使用（此為學生作品）</p>
+  </footer>
+  <!--footer 結束-->
+
+  <!--引用JS要放最後-->
+  <script src="{% static 'script_stp.js'%}"></script>
+  <script src="{% static 'script_openmenu.js' %}"></script>
+  <script src="{% static 'script_linkdin_2.js' %}"></script>
+  </body>
+</html>

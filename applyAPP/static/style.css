@@ -1,0 +1,531 @@
+
+/* 
+* 由index.html
+* 開始設計的CSS
+* 文字及其相關配置
+*/
+
+body{
+    background-color: #FFEEDD;
+    cursor:url('pic/mouse_normal_1.png'),auto; /* 鼠標 */
+    cursor:url('pic/mouse_pointer_1.png'),pointer;
+    font-family: "Times New Roman","標楷體";
+    color: #333;
+}
+
+body:active{
+    cursor: url('pic/mouse_click_1.png'),auto;
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center; /* 文字置中 */
+    border-radius: 20px 20px 0px 0px; /* 圓角 */
+}
+
+a{
+    text-decoration: none;
+}
+
+/* header圖片輪播開始 */
+
+#header{
+    padding: 10px;
+    max-height: 160px;
+    width: 99%;
+    overflow: hidden; /* 隱藏超出部分 */
+    border-radius: 20px; /* 圓角 */
+}
+
+.slides-container{
+    width: 100%;
+    display: flex;
+    position: relative;
+    animation: slides 10s infinite alternate; /* 10秒輪播一次 */
+}
+  
+.Slide{
+    width: 100%;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  
+
+@keyframes slides{
+    0%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(0);
+    }
+    40%{
+        transform: translateX(-100%); 
+    }
+    60%{
+        transform: translateX(-100%);
+    }
+    80%{
+        transform: translateX(-100%); 
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+  
+img{
+    max-height: 100%;
+    max-width: 100%;
+    display: block; 
+    margin: 0 auto; /* 置中 */
+}
+
+/* header圖片輪播結束 */
+
+/* 導覽列開始 */
+.nav {
+    background-color: #ADD8E6;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    border-radius: 0px 0px 20px 20px;
+}
+  
+.menu {
+    list-style: none;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 10vh;
+    align-items: center;
+}
+  
+.menu>li {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+    display: block;
+}
+  
+.menu>li>a {
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+    font-size: 120%;
+    transition: 0.3s ease;
+}
+  
+.menu>li:hover>a {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border: #333;
+    border: #FFC0CB inset 5px;
+    font-size: 140%;
+}
+ 
+.menu-button {
+    display: none;
+}
+  
+.icon_out{
+    display: none;
+}
+.icon_in{
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #ADD8E6;
+    }
+    .icon_out{
+        display: block;
+    }
+    .icon_in{
+        display: none;
+    }
+    .menu-button {
+      display: block;
+      background: none;
+      border: none;
+      margin: 0%;
+      font-size: 24px;
+      color: #333;
+      cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+  
+    .menu.show {
+      display: flex;
+      margin: flex;
+      height: auto;
+      border-radius:15px;
+      max-width:92%;
+    }
+  
+    .menu li {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .menu>li {
+      margin-right: 0;
+    }
+}
+  
+
+/* 圖文排版 */
+
+.clear::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h2{
+    font-size: 5vh;
+}
+
+
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+} /* 分割線 */
+
+.center_text{
+    padding: 0px 10vh;
+    text-align: center;
+} /* 置中說明文字 */
+
+
+/* 內文按鈕 */
+.index_button{
+    background-color: #ffa0b0;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+} 
+
+.index_button:hover {
+    background-color: #ff6b7f;
+}
+
+/* 內文按鈕 結束*/
+
+/* Web引導介紹 intro */
+.intro{
+    height: auto;
+}
+
+.intro > div{
+    float: left;
+    position: relative;
+    width: 20%;
+    height: 250px;
+    border: #ffa0b0 solid 2px;
+    border-radius: 0px 15px;
+    margin: 2%;
+    justify-content: center; /* 內容水平置中 */
+    align-items: center; /* 內容垂直置中 */
+}
+
+.intro .clear::after{
+    display: none;
+}
+
+.intro div > h2{
+    border: #ffa0b0 solid 2px;
+    background-color:#FFC0CB;
+    padding: 10px;
+    margin: 10px;
+    text-align:center;
+}
+
+.intro div > li{
+    padding: 5px;
+    margin-left: 15px;
+}
+
+.intro .index_button{
+    position: absolute;
+    bottom: 10px; /* 與底部的距離 */
+    right: 10px; /* 與右邊的距離 */
+}
+
+@media screen and (max-width: 769px){
+    .intro div{
+        min-width: 42%;
+        width: auto;
+        margin: 10px;
+        border: #333 0px 15px;
+    }
+    .intro .clear::after{
+        display: block;
+    }
+    .center_text{
+        width: auto;
+        padding: 0 5%;
+    }
+    .center_text h2{
+        font-size: 4vh;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 432px){
+    .intro div{
+        width: 95%;
+        margin: 10px;
+        border: #333 0px 15px;
+    }
+}
+/* Web引導介紹 intro  結束*/
+
+/* 吉祥物小兔介紹 rabbit_intro */
+.rabbit_intro{
+    width: 90%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5% 2%;
+}
+
+.rabbit_intro img{
+    width: 25%;
+    border-radius: 0px 20px;
+    border:  solid #333;
+}
+/* 吉祥物小兔介紹 rabbit_intro 結束 */
+
+/* FB按讚功能 */
+.FB{
+    position: relative;
+    height: 60vh;
+    width: 90%;
+    margin: 50px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgba(255, 126, 95, 0.5), rgba(254, 180, 123, 0.5), rgba(103, 178, 111, 0.5), rgba(76, 162, 205, 0.5));
+    background-size: 800% 800%;
+    animation: forFB 10s ease infinite;
+}
+
+
+
+@keyframes forFB{
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+}
+
+.marquee-top, .marquee-bottom{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marquee-top marquee{
+    height: 30px;
+    color: #467687;
+    white-space: nowrap;
+    overflow: hidden;
+    align-self: flex-start;
+}
+
+.marquee-bottom marquee{
+    height: 30px;
+    color: #467687;
+    white-space: nowrap;
+    overflow: hidden;
+    align-self: flex-end;
+}
+
+.like-button{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-left,.arrow-right{
+    top: 40%;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    transform: translateY(-50%);
+    font-size: 50px;
+    width: auto;
+    height: auto;
+    color: #fff;
+    animation: arrowAnima 6s ease-in-out infinite;
+}
+.arrow-left{
+    left: 0;
+}
+.arrow-right{
+    right: 0;
+    transform: rotate(180deg);
+}
+
+@keyframes arrowAnima{
+    0%, 100%{
+        transform: translateX(-600%);
+    }
+    50%{
+        transform: translateX(600%);
+    }
+}
+@media screen and (max-width: 768px){
+    .interactive-section {
+      height: 50vh;
+    }
+    .like-button {
+      width: 80%;
+    }
+    .arrow-left, .arrow-right{
+        display: none;
+    }
+}
+
+/* FB按讚功能 結束 */
+
+
+/* feedback回饋表單 */
+
+.feedback{
+    position: relative;
+    height: 60vh;
+    width: 90%;
+    margin: 50px auto;
+    overflow: hidden;
+    border: #333;
+    border: #FFC0CB inset 10px;
+    background: linear-gradient(to bottom, #a4d4e4, #c8edf9);
+}
+
+.content{
+    width: 30%;
+    background-color: #FFC0CB;
+    height: 90%;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius:15px 15px 0 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 35%;
+}
+
+#menu, #textInput{
+    margin: 1%;
+    padding: 3%;
+    width: auto;
+}
+  
+#submitBtn{
+    display: block;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 20px; /* 與底部的距離 */
+    right: 10px; /* 與右邊的距離 */
+}
+  
+.delete{
+    margin: 20px 0 20px 10px;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px; /* 與底部的距離 */
+    left: 10px; /* 與右邊的距離 */
+}
+  
+
+@media screen and (max-width: 768px){
+    .feedback{
+        height: 48vh;
+    }
+    .content{
+        width: 55%;
+        left: 22%;
+        top: 0;
+    }
+}
+@media screen and (max-width: 426px){
+    .feedback{
+        height: 55vh;
+    }
+    .content{
+        width: 65%;
+        left: 15%;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 356px){
+    .feedback{
+        height: 48vh;
+    }
+    .content{
+        height: 43vh;
+        width: 80%;
+        left: 1%;
+        top: 0;
+    }
+}
+/* feedback回饋表單結束 */
+
+/* scroll to top */
+
+#scroll-to-top-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(213, 120, 120, 0.475);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.5s ease-in-out;
+    border-radius: 20px;
+}
+
+#scroll-to-top-btn:hover{
+    background-color: rgb(230, 146, 146);
+}

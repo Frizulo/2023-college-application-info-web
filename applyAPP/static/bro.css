@@ -1,0 +1,57 @@
+
+section {
+    margin: 2%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+  
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+  
+input, select {
+    margin-bottom: 10px;
+}
+  
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.threshold{
+    display: flex;
+    justify-content: center; /* 內容水平置中 */
+    align-items: center; /* 內容垂直置中 */
+}
+.threshold div{
+    margin: 0 10px;
+}
+  
+  
+.index_button{
+    background-color: #ffa0b0;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+} 
+  
+.index_button:hover {
+    background-color: #ff6b7f;
+}
+  
+.sec{
+    height: auto;
+    width: 93%;
+}

@@ -1,0 +1,173 @@
+<!--個人申請介紹-->
+<!DOCTYPE html>
+{% load static %}
+<html>
+<!--head放網頁資訊-->
+<head>
+  <!--下一行：用UTF-8的編碼方式(可看中文)-->
+  <meta charset="UTF-8"></meta> 
+  <!--告訴搜尋引擎網頁描述-->
+  <meta name="description" content="個人申請準備指引" />
+  <!--告訴搜尋引擎作者-->
+  <meta name="author" content="Frizulo" />
+  <!--告訴搜尋引擎網頁關鍵字-->
+  <meta name="keyword" content="個人申請準備指引, 個人申請, 學習歷程, 準備指引, 學習歷程檔案, 學習歷程檔案範例, 學習歷程自述, 個人申請113, 個人申請分數, 個人申請人數, 個人申請介紹, 個申, 個申準備, 個人申請簡章, 個申簡章, 大學升學管道, 升學, 準備, 學習歷程檔案, 學習歷程, 面試, 面試準備, 考古題, 面試考古題, 個申面試, 個人申請標準" />
+  <!--視口設定-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--title網頁顯示標題-->
+  <title>個人申請介紹 | 個人申請準備指引(๑•̀ㅂ•́)و✧</title>
+  <!--引用styles.css-->
+  <link rel="stylesheet" href="{% static 'style.css' %}"/>
+  <link rel="stylesheet" href="{% static 'intro.css' %}"/>
+</head>
+<body>
+  <div id="header">
+    <div class="slides-container">
+      <div class="Slide">
+        <img src="../static/pic/title-1.png"  alt="個人申請準備指引" style="width: 1160px">
+      </div>
+      <div class="Slide">
+        <img src="../static/pic/title-2.png" alt="高中生活like..." style="width: 1160px">
+      </div>
+    </div>
+  </div><!--圖片轉轉轉(●ˇ∀ˇ●)-->
+       
+  <!--導覽列開始-->
+  <div class="nav">
+    <button class="menu-button">&#9776;</button>
+    <a href="/index"><img class="icon_out" src="../static/pic/icon.png" alt="icon:Frizulo" style="max-height: 50px; float:right; margin-top: -50px;"></a>
+    <ul class="menu">
+      <a href="/index"><img class="icon_in" src="../static/pic/icon.png" alt="icon:Frizulo" style="max-height: 60px;"></a>
+      <li><a href="/introduction">個人申請介紹</a></li>
+      <li><a href="/brochure">簡章查詢</a></li>
+      <li><a href="/review_data">審查資料項目</a></li>
+      <li><a href="/interview">面試準備</a></li>
+    </ul>
+  </div> 
+  <!--導覽列結束-->
+
+  <!--rule Vision1 棄置原因:配置更動-->
+  <!--<section class="rule">
+    <div class="title">重點規則！</div>
+    <img class="right-../static/pic">
+    <dl class="text-left">
+      <div><dt>一、參加個申必須具備：高中、高職畢業的同等學歷</dt></div>
+
+      <div>
+      <dt>二、個人申請（以下簡稱個申）是個具有兩階段篩選機制的入學管道</dt>
+        <dd style="margin-bottom: -1vh;">（一）第一階段：學測（學科能力測驗）成績
+          <ul>
+            <li>須通過校系檢定標準及倍率篩選，校系最多採計<b>4</b>科</li>
+            <li>部分校系另採計「英語聽力測驗」、「術科考試」或「大學程式設計先修檢測（APCS）」的成績</li>
+              <ul style="margin-left: 0;">
+                <li>APCS科目成績，以<b>110年3月至113年2月</b>期間內應試成績最優等級者為準</li>
+                <li>p.s.以上三項<b>非必考項目</b>，請視欲申請校系規定自行選考！</li>
+              </ul>
+          </ul>
+        </dd>
+        <dd style="margin-bottom: -1vh;">（二）第二階段：指定項目甄試
+          <ul>
+            <li>各校系自訂</li>
+            <li>基本必備項目：備審資料</li>
+            <li>部分校系另要求：術科現場創作、面試、筆試…</li>
+          </ul>
+        </dd>
+      </div>
+
+      <div>
+      <dt>三、每人以申請<b>六</b>個校系（含）為限</dt>
+      </div>
+
+      <div>
+      <dt>四、特殊組別：</dt>
+        <dd>（一）青年儲蓄帳戶組：只限已參與完青年儲蓄計畫的學生報名</dd>
+        <dd>（二）願景組：配合教育部而設的願景計畫，僅限符合特定資格的學生報名</dd>
+      </div>
+
+      <div>
+      <dt>五、以下狀況者不得參加個申：</dt>
+        <dd>（一）該學年繁星推薦錄取生，<b>就算放棄也不得參加</b></dd>
+        <dd>（二）該學年繁星推薦第八類學群通過第一階段篩選之考生，個申<b>不得再報名同一所大學之醫學系</b></dd>
+        <dd>（三）該學年錄取特殊選才、科技校院四年制及專科學校二年制特殊選才入學聯合招生，並<b>完成報到者</b></dd>
+      </div>
+
+      <div>
+      <dt>六、未於當學年度簡章規定期限內放棄錄取資格者，不得報名大學考試入學招生及四技二專聯合登記分發入學招生</dt>
+      </div>
+
+    </dl>
+  </section>-->
+
+  <section class="rule">
+    <div>
+      <h2>必要條件</h2>
+      <div class="text">
+        <dl>高中、高職畢業的同等學歷</dl>
+      </div>
+    </div>
+
+    <div>
+      <h2>主要機制</h2>
+      <div class="text">
+        <dl class="needline">第一階段：學測（學科能力測驗）成績
+          <dt>須通過校系檢定標準及倍率篩選，校系最多採計<b>4</b>科</dt>
+          <dt>部分校系另採計「英語聽力測驗」、「術科考試」或「大學程式設計先修檢測（APCS）」的成績</dt>
+          <div style="font-size: 1rem; margin-top: 1%; margin-left: 4em;">p.s. APCS成績，以<b>110年3月至113年2月</b>期間內應試成績最優等級者為準</div>
+          <div style="font-size: 1rem; margin-left: 4em;">p.s. 以上三項<b>非必考項目</b>，請視欲申請校系規定自行選考！</div>
+        </dl>
+        <dl>第二階段：指定項目甄試
+          <dt>各校系自訂</dt>
+          <dt>基本必備項目：備審資料</dt>
+          <dt>部分校系另要求：術科現場創作、面試、筆試…</dt>
+          <div style="font-size: 1rem; margin-top: 1%; margin-left: 4em;">p.s. 每人以申請<b>六</b>個校系（含）為限</div>
+        </dl>
+    </div>
+
+    <div>
+      <h2>特殊組別</h2>
+      <div class="text">
+        <dl>一、青年儲蓄帳戶組
+          <dt>只限已參與完青年儲蓄計畫的學生報名</dt>
+        </dl>
+        <dl>二、願景組
+          <dt>配合教育部而設的願景計畫，僅限符合特定資格的學生報名</dt>
+        </dl>
+      </div>
+    </div>
+
+    <div>
+      <h2>相關限制</h2>
+      <div class="text">
+        <dl>一、個申參加限制
+          <dt>（一）該學年繁星推薦錄取生，<b>就算放棄也不得參加</b></dt>
+          <dt>（二）該學年繁星推薦第八類學群通過第一階段篩選之考生，個申<b>不得再報名同一所大學之醫學系</b></dt>
+          <dt>（三）該學年錄取特殊選才、科技校院四年制及專科學校二年制特殊選才入學聯合招生，並<b>完成報到者</b></dt>
+        </dl>
+        <dl>二、關於後續升學管道
+          <dt><b>未於</b>當學年度簡章規定<b>期限內放棄錄取資格者</b>，<b>不得報名</b>大學考試入學招生及四技二專聯合登記分發入學招生</dt>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <div class="clear"></div>
+
+  
+  <!--scroll to top-->
+  <div id="scroll-to-top-btn">⩑</div>
+
+  <!--footer 放網頁資訊-->
+  <footer>
+    <p>您的支持就是我最大的鼓勵ᕦ(ò_óˇ)ᕤ</p>
+    <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Falgo.nttu.edu.tw%2F1121ITWWW%2F11211107&width=174&layout=button_count&action=like&size=large&share=true&height=46&appId" width="130" height="30"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; ../static/picture-in-../static/picture; web-share"></iframe>
+    <p>Copyright &copy; 2023 Frizulo All Rights Reserved.</p>
+    
+    <p>本網站僅供 國立臺東大學 課程"互動式網頁技術" 使用（此為學生作品）</p>
+  </footer>
+  <!--footer 結束-->
+
+  <!--引用JS要放最後-->
+  <script src="{% static 'script_stp.js' %}"></script>
+  <script src="{% static 'script_openmenu.js' %}"></script>
+  </body>
+</html>

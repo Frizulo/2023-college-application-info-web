@@ -1,0 +1,293 @@
+<!--審查資料項目-->
+<!DOCTYPE html>
+{% load static %}
+<html>
+<!--head放網頁資訊-->
+<head>
+  <!--下一行：用UTF-8的編碼方式(可看中文)-->
+  <meta charset="UTF-8"></meta> 
+  <!--告訴搜尋引擎網頁描述-->
+  <meta name="description" content="個人申請準備指引" />
+  <!--告訴搜尋引擎作者-->
+  <meta name="author" content="Frizulo" />
+  <!--告訴搜尋引擎網頁關鍵字-->
+  <meta name="keyword" content="個人申請準備指引, 個人申請, 學習歷程, 準備指引, 學習歷程檔案, 學習歷程檔案範例, 學習歷程自述, 個人申請113, 個人申請分數, 個人申請人數, 個人申請介紹, 個申, 個申準備, 個人申請簡章, 個申簡章, 大學升學管道, 升學, 準備, 學習歷程檔案, 學習歷程, 面試, 面試準備, 考古題, 面試考古題, 個申面試, 個人申請標準" />
+  <!--視口設定-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--title網頁顯示標題-->
+  <title>審查資料項目 | 個人申請準備指引(๑•̀ㅂ•́)و✧</title>
+  <!--引用styles.css-->
+  <link rel="stylesheet" href="{% static 'style.css' %}"/>
+  <link rel="stylesheet" href="{% static 'rd.css' %}"/>
+</head>
+<body>
+  <div id="header">
+    <div class="slides-container">
+      <div class="Slide">
+        <img src="../static/pic/title-1.png"  alt="個人申請準備指引" style="width: 1160px">
+      </div>
+      <div class="Slide">
+        <img src="../static/pic/title-2.png" alt="高中生活like..." style="width: 1160px">
+      </div>
+    </div>
+  </div><!--圖片轉轉轉(●ˇ∀ˇ●)-->
+       
+  <!--導覽列開始-->
+  <div class="nav">
+    <button class="menu-button">&#9776;</button>
+    <a href="/index"><img class="icon_out" src="../static/pic/icon.png" alt="icon:Frizulo" style="max-height: 50px; float:right; margin-top: -50px;"></a>
+    <ul class="menu">
+      <a href="/index"><img class="icon_in" src="../static/pic/icon.png" alt="icon:Frizulo" style="max-height: 60px;"></a>
+      <li><a href="/introduction">個人申請介紹</a></li>
+      <li><a href="/brochure">簡章查詢</a></li>
+      <li><a href="/review_data">審查資料項目</a></li>
+      <li><a href="/interview">面試準備</a></li>
+    </ul>
+  </div> 
+  <!--導覽列結束-->
+
+  <!--快捷按鈕-->
+  <section>
+    <h2>！linkedin！</h2>
+    <div class="btns">
+      <div class="index_button" id="first">撰寫前注意事項</div>
+      <div class="index_button" id="second">學習歷程的建議</div>
+      <div class="index_button" id="third">學習歷程自述</div>
+      <div class="index_button" id="fourth">項目代碼對照表</div>
+      <div class="index_button" id="fifth">相關影音資料</div>
+    </div>
+  </section>
+  <!--快捷按鈕end-->
+
+  <!--撰寫前注意事項-->
+  <section id="target_first">
+    <h2>撰寫前注意事項</h2>
+    <ol type="1">
+      <img src="../static/pic/folder.png" alt="資料夾項目樣式例圖" style="float: right; margin-left: 10px;margin-right: 20px; max-width: 20%; border-radius: 0 20px; border: 2px dashed #467687 ;">
+      <li>建構校系專屬資料夾：
+        <p>
+        &emsp;&emsp;各校系所要求的細項、重點、人格特質各有不同，請先確定校系要求，再為其建構具系統性資料夾，便於整理與查找。<br>
+        &emsp;&emsp;p.s.因為電腦資料夾在排序時，會以名稱排序，可以分類名稱前按重要程度或性質給予順序。（如圖）
+        </p>
+      </li>
+      <li>注意呈現的主要觀點：
+        <p>
+        &emsp;&emsp;撰寫時，請注意資料主軸，你要呈現的是什麼？你想展現成什麼樣子？設大綱，不要離題，不要模糊焦點。
+        </p>
+      </li>
+      <li>連結校系與人格特質：
+        <p>
+          &emsp;&emsp;清楚掌握自身與科系需要的特質，著重撰寫該部分，讓大學端知道你就是他們想找的類型。
+        </p>
+      </li>
+      <li>校系書審的規範限制：
+        <p>
+          &emsp;&emsp;注意書審的字數、字體、頁數、規格，每個校系可能會有所差異，撰寫前務必確定限制。
+        </p>
+      </li>
+      <li>就讀動機要呼應校系：
+        <p>
+          &emsp;&emsp;清楚校系的學習內容，找到與之相關的動機。像是吸引你的課程或學長姐的研究。
+        </p>
+      </li>
+      <li>學習計畫與校系相關：
+        <p>
+          &emsp;&emsp;先關注校系的課程，再研擬可自學先修的項目，並以此安排學習計畫。
+        </p>
+      </li>
+    </ol>
+  </section>
+
+  <!--學習歷程的建議-->
+  <section id="target_second">
+    <h2>學習歷程的建議</h2>
+    <ol type="1">
+      <li>百字簡述的相關要點：
+        <p>
+        &emsp;&emsp;觀點清晰明確，避免冗詞贅句，內容言之有物，字數控制得宜（90-100字含標點符號）。<br>
+        &emsp;&emsp;先行梳理動機、過程、學習、反思、未來影響的重要觀點，再濃縮成精華。<br>
+        </p>
+      </li>
+      <li>收穫反思的內容面向：
+        <p>
+        &emsp;&emsp;所習得的技能、受到的啟發、遇到問題與處理、未來發展可能性、體會與成長、改進措施。
+        </p>
+      </li>
+      <li>課程學習成果的要點：
+        <p>
+          &emsp;&emsp;不要以課程為題命名，重點在於所學，課程是其次。建議採較專業或學術的命題方式。<br>
+          &emsp;&emsp;避免不明確或廣泛的題目，以<b>小題大作</b>的方式代替不夠深入的大題小作。
+        </p>
+      </li>
+      <li>整體架構與語句建議：
+        <p>
+          &emsp;&emsp;記下想寫的項目，分門別類，按照先後順序排定架構，<b>架構需分明</b>。<br>
+          &emsp;&emsp;思考正向，語句通順、具關連性，敘述具條理，能展現具邏輯的思緒、見解，簡明扼要。
+        </p>
+      </li>
+      <li>作品呈現建議：
+        <p>
+          &emsp;&emsp;設定目錄，並加入連結可跳轉頁面，記得於目錄頁備註可點擊跳轉。<br>
+          &emsp;&emsp;檔案內，摘要優先，脈絡清晰，善用圖表，注意不要忘記引註資料來源。
+        </p>
+      </li>
+      <li>可參考之網站：
+        <p>
+          <!-- target="_blank"指定連結開啟新窗口 -->
+          <a class="index_button" target="_blank" title="拉課" href="https://luckertw.com/">拉課</a><br>
+          &emsp;&emsp;提供學習歷程參考範本、製作模板、學習資訊、推薦題材。<br>
+          <a class="index_button" target="_blank" title="Less Is More 先鋒教育" href="https://lessismoreedu.com/">Less Is More 先鋒教育</a><br>
+          &emsp;&emsp;提供讀書考試技巧、個人申請的相關技巧。<br>
+        </p>
+      </li>
+    </ol>
+  </section>
+
+  
+  <!--學習歷程自述-->
+  <section id="target_third">
+    <h2>學習歷程自述</h2>
+    <ol type="A" start="15">
+      <li>高中學習歷程反思：
+        <p>
+        &emsp;&emsp;怎麼選組的？怎麼確定科系的？初次的接觸與嘗試？先想好這些重點，那寫就不是問題了。<br>
+        &emsp;&emsp;p.s.請確認校系相關規範，建議先撰寫初版1000字，之後濃縮或增加比較方便。
+        </p>
+      </li>
+      <li>就讀動機：
+        <p>
+        &emsp;&emsp;興趣志向、經歷引發、師資課程資源，參雜在大學時希望取得的訓練。<br>
+        &emsp;&emsp;標題須合宜，描述需具體，內容須完整，架構須連貫。
+        </p>
+      </li>
+      <li>未來學習計畫與生涯規劃：
+        <p>
+        &emsp;&emsp;連結大學的專業知識，強化專業能力，像是如何先修、準備考照、希望具備的能力。<br>
+        &emsp;&emsp;近程，開學前；中程，修業期間；遠程，畢業後。<br>
+        &emsp;&emsp;採條列式，圖形呈現，具體闡述，不多贅述，用語明確。
+        </p>
+      </li>
+    </ol>
+  </section>
+
+  <!--項目代碼對照表-->
+  <section id="target_fourth">
+  <h2>項目代碼對照表</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>項次</th>
+        <th>審查資料</th>
+        <th>項目內容代碼對照</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="A">
+        <td>1</td>
+        <td>修課紀錄</td>
+        <td>A.修課紀錄</td>
+      </tr>
+      <tr  class="B">
+        <td rowspan="4">2</td>
+        <td rowspan="4">課程學習成果<sup>1</sup></td>
+        <td>B.書面報告</td>
+      </tr>
+      <tr  class="LB">
+        <td>C.實作作品</td>
+      </tr>
+      <tr   class="B">
+        <td>D.自然科學領域探究與實作成果，或特殊類型班級之相關課程學習成果</td>
+      </tr>
+      <tr  class="LB">
+        <td>E.社會領域探究活動成果，或特殊類型班級之相關課程學習成果</td>
+      </tr>
+      <tr class="A">
+        <td rowspan="9">3</td>
+        <td rowspan="9">多元表現<sup>2</sup></td>
+        <td>F.高中自主學習計畫與成果</td>
+      </tr>
+      <tr class="LA">
+        <td>G.社團活動經驗</td>
+      </tr>
+      <tr class="A">
+        <td>H.擔任幹部經驗</td>
+      </tr>
+      <tr class="LA">
+        <td>I.服務學習經驗</td>
+      </tr>
+      <tr class="A">
+        <td>J.競賽表現</td>
+      </tr>
+      <tr class="LA">
+        <td>K.非修課紀錄之成果作品</td>
+      </tr>
+      <tr class="A">
+        <td>L.檢定證照</td>
+      </tr>
+      <tr class="LA">
+        <td>M.特殊優良表現證明</td>
+      </tr>
+      <tr class="A">
+        <td>N.多元表現綜整心得</td>
+      </tr>
+      <tr class="B">
+        <td rowspan="3">4</td>
+        <td rowspan="3">學習歷程自述</td>
+        <td>O.高中學習歷程反思</td>
+      </tr>
+        <tr class="LB">
+          <td>P.就讀動機</td>
+        </tr>
+        <tr class="B">
+          <td>Q.未來學習計畫與生涯規劃</td>
+        </tr>
+      </tbody>
+    </table>
+    <ol type="1" style="margin-left: 2rem;">註解：
+      <li>就校系要求項目選擇提供至多 3 件（詳細資料請自行於該校系網站查詢）</li>
+      <li>就校系要求項目選擇提供至多 10 件，並<b>須另上傳多元表現綜整心得</b>（字數合計至多 <b>800</b> 字、圖片至多 <b>3</b> 張，製作一個PDF檔案上傳）</li>
+    </ol>
+    <div style="text-align: right; margin-right: 5%;">資料參採：<a  target="_blank" title="淡江大學招生策略中心" href="https://adms.tku.edu.tw/File/Userfiles/0000000099/files/111%E5%AF%A9%E6%9F%A5%E8%B3%87%E6%96%99%E9%A0%85%E7%9B%AE%E5%85%A7%E5%AE%B9%E5%B0%8D%E7%85%A7%E8%A1%A8.pdf">淡江大學招生策略中心</a></div>
+  </section>
+  <!--項目代碼對照表 end-->
+
+  
+  <section id="target_fifth">
+    <h2>相關影音資料</h2>
+    <ol type="1">
+      <li><a class="index_button" target="_blank" title="學測備審不知道怎麼寫? 成大教授親自傳授評分重點! ｜學測、備審資料、個人申請" href="https://youtu.be/cJALTGyapaQ?si=SPSv3barSlUTkBrB">學測備審不知道怎麼寫? 成大教授親自傳授評分重點! ｜學測、備審資料、個人申請</a>
+        <p style="margin-top: 0%;">
+        &emsp;&emsp;
+        </p>
+      </li>
+      <li><a class="index_button" target="_blank" title="學習歷程自述的「反思」怎麼寫？大學教授告訴你！" href="https://youtu.be/DwB4dJmXZnQ?si=E_KcxYgEPDCXi7Bh">學習歷程自述的「反思」怎麼寫？大學教授告訴你！</a>
+        <p style="margin-top: 0%;">
+        &emsp;&emsp;
+        </p>
+      </li>
+      <li><a class="index_button" target="_blank" title="學習歷程檔案要怎麼做？台大教授教你做出理想的作品｜作伙學" href="https://youtu.be/XC_V5DkqnTI?si=aIQzIxGr7B47yix9">學習歷程檔案要怎麼做？台大教授教你做出理想的作品｜作伙學</a>
+        <p style="margin-top: 0%;">
+        </p>
+      </li>
+    </ol>
+  </section>
+  
+  <!--scroll to top-->
+  <div id="scroll-to-top-btn">⩑</div>
+
+  <!--footer 放網頁資訊-->
+  <footer>
+    <p>您的支持就是我最大的鼓勵ᕦ(ò_óˇ)ᕤ</p>
+    <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Falgo.nttu.edu.tw%2F1121ITWWW%2F11211107&width=174&layout=button_count&action=like&size=large&share=true&height=46&appId" width="130" height="30"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; ../static/picture-in-../static/picture; web-share"></iframe>
+    <p>Copyright &copy; 2023 Frizulo All Rights Reserved.</p>
+    
+    <p>本網站僅供 國立臺東大學 課程"互動式網頁技術" 使用（此為學生作品）</p>
+  </footer>
+  <!--footer 結束-->
+
+  <!--引用JS要放最後-->
+  <script src="{% static 'script_stp.js' %}"></script>
+  <script src="{% static 'script_openmenu.js' %}"></script>
+  <script src="{% static 'script_linkdin.js'%}"></script>
+  </body>
+</html>
